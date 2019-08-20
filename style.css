@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+body {
+	background-color: white;
+}
+
+h1 {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 40px;
+}
+
+h2 {
+	font-family: "Montserrat";
+	font-size: 30px;
+}
+
+input {
+	text-align: center;
+	font-size: 27px;
+	border-radius: 20px;
+	border: none;
+	outline-style: none;
+	background-color: transparent;
+	border: solid red 3px;
+	padding: 7px;
+}
+
+button {
+	border-radius: 10px;
+	border: none;
+	font-size: 25px;
+	outline-style: none;
+	opacity: 0.8;
+	padding: 10px;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+#check {
+	background: #2ecc71;
+}
+
+#upload {
+	background: #f1c40f
+}
