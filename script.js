@@ -1,5 +1,5 @@
-var URL = "https://api.cloudinary.com/v1_1/dwy9bl7kl/image/upload"
-var UnsignedUploadPreset = "e5xe8bay"
+var URL = "https://api.cloudinary.com/v1_1/webf1world/image/upload"
+var UnsignedUploadPreset = "ggxksstt"
 
 var	xhr = new XMLHttpRequest();
 
@@ -7,9 +7,9 @@ function get_photo() {
 
 	username = document.getElementById("username").value;
 
-	var find_id = 'https://www.instagram.com/' + username + '/?__a=1';
+	//var find_id = 'https://www.instagram.com/' + username + '/?__a=1';
 
-	$.getJSON(find_id, function(json) {
+	/*$.getJSON(find_id, function(json) {
 
 		var user_id = json.graphql.user.id;
 
@@ -21,14 +21,16 @@ function get_photo() {
 
 		document.getElementById("profile").src = photo;
 
-	})
+	})*/
+
+	var find_photo = "https://imgtagram.com/u/" + username;
+
+
 
 };
 
 
 function server_photos() {
-
-
 	xhr.open("GET", )
 }
 
@@ -63,6 +65,7 @@ function upload() {
    			var response = JSON.parse(xhr.response);
    			var server_image = response.secure_url; // https address of uploaded file
    			console.log("Server Image: " + server_image)
+   			alert("Uploaded")
 
    		} else { // Error
 
