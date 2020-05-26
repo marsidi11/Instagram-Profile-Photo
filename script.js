@@ -7,9 +7,9 @@ function get_photo() {
 
 	username = document.getElementById("username").value;
 
-	//var find_id = 'https://www.instagram.com/' + username + '/?__a=1';
+	var find_id = 'https://www.instagram.com/' + username + '/?__a=1';
 
-	/*$.getJSON(find_id, function(json) {
+	$.getJSON(find_id, function(json) {
 
 		var user_id = json.graphql.user.id;
 
@@ -21,7 +21,7 @@ function get_photo() {
 
 		document.getElementById("profile").src = photo;
 
-	})*/
+	})
 
 	var find_photo = "https://imgtagram.com/u/" + username;
 
